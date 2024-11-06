@@ -1,0 +1,29 @@
+/* style.css */
+body {
+    display: flex;
+    overflow-x: hidden;
+}
+
+#sidebar {
+    width: 250px;
+    transition: width 0.3s;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transform: translateX(-250px); /* initially hidden */
+    z-index: 1000;
+}
+
+#sidebar.show {
+    transform: translateX(0);
+}
+
+#content {
+    margin-left: 0;
+    width: 100%;
+    transition: margin-left 0.3s;
+}
+
+#content.shifted {
+    margin-left: 250px;
+}
