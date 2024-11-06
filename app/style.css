@@ -27,3 +27,76 @@ body {
 #content.shifted {
     margin-left: 250px;
 }
+    /* Basic Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Body Styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    /* Container for Cards */
+    .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Card Styling */
+    .card {
+        flex: 1 1 200px;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    /* Card Color Variations */
+    .card.orange {
+        background-color: #f5a623;
+    }
+
+    .card.blue {
+        background-color: #4a90e2;
+    }
+
+    .card.large {
+        flex-basis: 100%;
+        background-color: #4a90e2;
+    }
+
+    /* Card Title and Count */
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .card .count {
+        font-size: 24px;
+    }
+
+    /* Icon Styling */
+    .icon {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+    }
+

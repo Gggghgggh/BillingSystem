@@ -3,9 +3,65 @@
 <?php include 'sidebar.php'; ?>
 
 <div id="content">
-    <div class="container-fluid mt-4">
-        <h2>Welcome to the Dashboard</h2>
-        <p>This is the main content area.</p>
+    <div class="container-fluid mt-4" style="padding-top: 39px;">
+  <?php
+    // Invoice Card
+echo '
+    <a href="#" class="card orange">
+        <div>
+            <h3>Invoices</h3>
+            <div class="count">' . '</div>
+        </div>
+        <div class="icon"></div>
+    </a>
+';
+
+// Clients Card
+echo '
+    <a href="#" class="card blue">
+        <div>
+            <h3>Clients</h3>
+            <div class="count">' .  '</div>
+        </div>
+        <div class="icon"></div>
+    </a>
+';
+
+// Prices History Card
+echo '
+    <a href="#" class="card blue">
+        <div>
+            <h3>Prices History</h3>
+        </div>
+    </a>
+';
+
+// Items Card
+echo '
+    <a href="#" class="card blue">
+        <div>
+            <h3>Items</h3>
+            <div class="count">' .  '</div>
+        </div>
+        <div class="icon"></div>
+    </a>
+';
+
+// Summary Reports Card (Full Width)
+echo '
+    <a href="#" class="card large">
+        <h3>Summary Reports</h3>
+    </a>
+';
+
+// Unpaid Invoices Card (Full Width)
+echo '
+    <a href="#" class="card large">
+        <h3>Unpaid Invoices</h3>
+    </a>
+';
+?>
+        
     </div>
 </div>
 
